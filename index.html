@@ -3,91 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Preethi - Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <h1>Your Name</h1>
+            <div class="logo">Preethi</div>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#timeline">Journey</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Tech-Driven Supply Chain Enthusiast | Optimizing Efficiency, Transparency, and Sustainability</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="gradient-text">Preethi</span></h1>
+                <h2>Supply Chain & Data Analytics Professional</h2>
+                <p>Duke MEM student specializing in supply chain optimization and data-driven solutions. Experienced in automating processes, building analytics dashboards, and driving operational efficiency across manufacturing and tech industries.</p>
+                <a href="#projects" class="jump-btn">View My Work</a>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1"></div>
+                <div class="floating-card card-2"></div>
+                <div class="floating-card card-3"></div>
+            </div>
         </div>
     </section>
 
-    <section id="about">
+    <section id="timeline" class="timeline-section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I’ve always been fascinated by how things move, not just products, but the systems, data, and decisions that keep everything connected. With a background in Computer Science, I started by solving technical problems, and soon realized how much technology can transform real-world operations. That realization led me to pursue a Master’s in Engineering Management at Duke University, where I focus on Supply Chain and Operations. Today, I’m driven by the goal of using data, analytics, and digital tools to make supply chains smarter, more transparent, and sustainable by blending logic, innovation, and purpose to build systems built for the future.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Project description goes here.</p>
-                    <a href="#" class="btn">View Project</a>
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Master of Engineering Management - Duke University</h3>
+                        <p class="timeline-date">Aug 2024 - Dec 2025</p>
+                        <p>Specializing in Supply Chain, Manufacturing Operations, and Finance in High Tech</p>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Project description goes here.</p>
-                    <a href="#" class="btn">View Project</a>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Materials Management & Supply Chain Intern - Biogen</h3>
+                        <p class="timeline-date">Jun 2025 - Aug 2025</p>
+                        <p>Automated material mapping calculations, saved 40 hours/month, projected $140K savings</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Student Consultant - No Show Hero</h3>
+                        <p class="timeline-date">Jan 2025 - Apr 2025</p>
+                        <p>Led stakeholder engagements, improved service efficiency by 20%</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology - Computer Science</h3>
+                        <p class="timeline-date">Aug 2020 - May 2024</p>
+                        <p>GPA: 4.0/4.0 at Sri Krishna College of Engineering and Technology</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern - Edge Matrix Corporation</h3>
+                        <p class="timeline-date">Jan 2023 - Mar 2023</p>
+                        <p>Optimized ETL pipelines, built Power BI dashboards, reduced data prep time by 25%</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resume">
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2>Resume</h2>
-            <div class="resume-section">
-                <h3>Experience</h3>
-                <div class="resume-item">
-                    <h4>Job Title - Company</h4>
-                    <p class="date">Start Date - End Date</p>
-                    <p>Job description and achievements.</p>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openProject('supply-chain')">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Supply Chain Dashboard</h3>
+                        <p>Real-time IoT monitoring system for supply chain management</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>HTML/CSS</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="resume-section">
-                <h3>Education</h3>
-                <div class="resume-item">
-                    <h4>Degree - University</h4>
-                    <p class="date">Graduation Year</p>
+                
+                <div class="project-card" onclick="openProject('calculator')">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Advanced Calculator</h3>
+                        <p>Feature-rich calculator with modern UI design</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="resume-section">
-                <h3>Skills</h3>
-                <div class="skills">
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">Python</span>
-                    <span class="skill">React</span>
-                    <span class="skill">Node.js</span>
+                
+                <div class="project-card" onclick="openProject('inventory')">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Home Inventory System</h3>
+                        <p>Smart inventory management for household items</p>
+                        <div class="tech-stack">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Local Storage</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-            <p>GitHub: <a href="#">Your GitHub</a></p>
+            <h2>Let's Connect</h2>
+            <p>Ready to bring your ideas to life? Let's talk!</p>
+            <div class="contact-links">
+                <a href="mailto:preethiisure@gmail.com" class="contact-btn">
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/preethi-surendran/" class="contact-btn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="contact-btn">
+                    <span>GitHub</span>
+                </a>
+            </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
